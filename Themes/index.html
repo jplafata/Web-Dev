@@ -44,10 +44,13 @@
         }
 
         .navbar-collapse{
-          background: white;
-          padding: 10px;
-          text-align: center;
-          border-radius: 15px;
+          background-color: white;
+          position: fixed;
+          top: 0;
+          transition: all 0.8s ease-out;
+          height: 100%;
+          width: 100%;
+          left: 700px;
         }
 
         .cover{
@@ -58,31 +61,48 @@
           font-size: 3.5rem;
         }
       }
+
+      .indexcity {
+  z-index: 9999;
+}
+
+.right {
+    right: 0 !important;
+    left: 0 !important;
+}
     </style>
     <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+    <!-- <link href="css/cover.css" rel="stylesheet"> -->
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-clear">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Navigation -->
+        <div class="navbar navbar-default navbar-inverse fixed-top" role="navigation">
+            <div class="navbar-header">
+              <button type = "button" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <!-- <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> -->
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+                <a class="navbar-brand" href="#">Brand</a>
+
+            </div>
+
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Course</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+        </div>
+
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
   <!-- <header class="masthead mb-auto">
@@ -114,4 +134,12 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
+<script>
+jQuery(function($){
+    $('.navbar-toggler').click(function(){
+    $('.navbar-collapse').toggleClass('right');
+    $('.navbar-toggler').toggleClass('indexcity');
+    });
+});
+</script>
 </html>
