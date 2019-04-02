@@ -12,69 +12,38 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
-
-    <style>
-
-       body {
-        background: url(images/imagedesk.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-
-      .high-index{
-          z-index: 99999;
-          background: red !important;
-      }
-
-      @media only screen and (max-width: 768px) {
-          #navbarSupportedContent{
-                  background-color: #f8f9fa;
-                  position: fixed;
-                  top: 0;
-                  right: 0;
-                  z-index: 1;
-                  width: 280px;
-                  height: 100%;
-              }
-      }
-    </style>
+    <!-- <link href="css/cover.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/animsition.min.css">
   </head>
   <body class="text-center">
     <nav class="navbar navbar-expand-lg navbar-light bg-clear fixed-top">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="#">JL Beauty Inc</a>
+      <button id="nav-icon3" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
       </button>
 
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto text-center">
+        <div class="container-fluid">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link animsition-link" href="blog.html">Blog</a>
           </li>
         </ul>
       </div>
+      </div>
     </nav>
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-
-  <!-- <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">Cover</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#">Portfolio</a>
-        <a class="nav-link" href="#">Contact</a>
-      </nav>
-    </div>
-  </header>-->
+  <div class="animsition">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
   <main role="main" class="inner cover">
     <h1 class="cover-heading">Cover your page.</h1>
@@ -90,14 +59,12 @@
     </div>
   </footer>
 </div>
+</div>
+
 </body>
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
-<script>
-$('[data-toggle="collapse"]').on('click', function() {
-    $(this).toggleClass("high-index");
-    $navMenuCont = $($(this).data('target'));
-    $navMenuCont.animate({'width':'toggle'}, 350, "linear");
-});
-</script>
+<!-- animsition.js -->
+<script src="js/animsition.min.js"></script>
+<script src="js/script.js"></script>
 </html>
