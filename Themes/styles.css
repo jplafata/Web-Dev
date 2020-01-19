@@ -1,3 +1,14 @@
+
+/*
+Theme Name: Indica
+Theme URI: heyjp.dev
+Author: John-Paul Lafata
+Author URI: heyjp.dev
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Text Domain: indica
+*/
+
 body {
     padding-top: 56px;
     min-height: 75rem;
