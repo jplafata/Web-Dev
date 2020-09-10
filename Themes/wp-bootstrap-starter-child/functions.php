@@ -2,6 +2,12 @@
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
+/**
+* Custom Gutenburg blocks
+* UNDER DEVELOPMENT
+*/
+// require get_theme_file_path() . '/inc/gutenburg.php';
+
 // BEGIN ENQUEUE PARENT ACTION
 // AUTO GENERATED - Do not modify or remove comment markers above or below:
 
@@ -30,9 +36,4 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
 
-/**
-* Custom Gutenburg blocks
-*/
-require get_theme_file_path() . '/inc/gutenburg.php';
-
-?>
+wp_enqueue_script('child-js', get_stylesheet_directory_uri().'/js/child-script.js', array('jquery', 'wp-bootstrap-starter-themejs'), null, true);

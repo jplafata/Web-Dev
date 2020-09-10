@@ -1,4 +1,6 @@
-registerBlockType('heyjp,custom-image-hover',{
+const{ registerBlockType } = wp.blocks;
+console.log("where am i");
+registerBlockType('heyjp/custom-image-hover',{
   //Built-in attributes
   title: 'Hover Text Image',
   description: 'Displays an image with text overlay and hover effect',
