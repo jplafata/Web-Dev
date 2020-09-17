@@ -18,8 +18,12 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
 <?php wp_head(); ?>
 </head>
-
+<?php if(is_page('pricing')): ?>
+<body style="position:relative;" data-spy="scroll" data-target="#price-nav" data-offset="85" <?php body_class(); ?>>
+<?php else: ?>
 <body <?php body_class(); ?>>
+<?php endif; ?>
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
