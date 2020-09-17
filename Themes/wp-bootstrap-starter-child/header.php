@@ -25,7 +25,7 @@
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 	<header id="masthead" class="site-header navbar-static-top <?php echo wp_bootstrap_starter_bg_class(); ?>" role="banner">
         <div class="container">
-            <nav class="navbar navbar-expand-xl p-0">
+            <nav class="navbar scrolling-navbar navbar-expand-xl p-0">
                 <div class="navbar-brand">
                     <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
                         <a href="<?php echo esc_url( home_url( '/' )); ?>">
@@ -36,13 +36,16 @@
                     <?php endif; ?>
 
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                	<span class="icon-bar top-bar"></span>
+                	<span class="icon-bar middle-bar"></span>
+                	<span class="icon-bar bottom-bar"></span>
                 </button>
 
                 <?php
                 wp_nav_menu(array(
-                'theme_location'    => 'primary',
+                'theme_location'  => 'primary',
                 'container'       => 'div',
                 'container_id'    => 'main-nav',
                 'container_class' => 'collapse navbar-collapse justify-content-end',
