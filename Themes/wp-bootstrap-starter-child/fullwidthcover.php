@@ -3,7 +3,7 @@
 * Template Name: Full Width Cover
  */
 
-get_header(); ?>
+get_header('cover'); ?>
 
 	<section id="primary" class="content-area col-sm-12">
 		<main id="main" class="site-main" role="main">
