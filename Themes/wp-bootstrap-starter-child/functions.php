@@ -37,7 +37,6 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 // END ENQUEUE PARENT ACTION
 
 function loadChildScipts(){ wp_enqueue_script('child-js', 
-  get_stylesheet_directory_uri().'/js/child-script.js', array('jquery', 'bootstrap', 
-  'wp-bootstrap-starter-themejs'), null, true);
+  get_stylesheet_directory_uri().'/js/child-script.js', array('jquery', 'wp-bootstrap-starter-themejs'), null, true);
 }
-add_action( 'wp_enqueue_scripts', 'loadChildScipts' );
+add_action( 'wp_enqueue_scripts', 'loadChildScipts', 99 );
