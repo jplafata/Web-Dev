@@ -30,7 +30,7 @@ $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         $(".navbar-collapse").collapse("hide");
     });
 
-    // Activate scrollspy to add active class to navbar items on scroll 
+    // Activate scrollspy to add active class to navbar items on scroll
    $("body").scrollspy({
         target: "#mainNav",
         offset: 74,
@@ -53,5 +53,8 @@ $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
  jQuery( function ( $ ) {
    $( ' .widget_nav_menu ul' ).removeClass( 'flex-column' );
    $( '#footer-widget section').wrap( '<div class="col-12 col-md-4 text-center"></div>');
+   //for nav button
+   $('#navmenu-btn').click(function(){
+		$(this).toggleClass('open');
+	 });
  });
-

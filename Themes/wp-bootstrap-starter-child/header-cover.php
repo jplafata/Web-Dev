@@ -36,14 +36,28 @@
                     esc_url(bloginfo('name')); ?></a>
             <?php endif; ?>
 
-            <button class="navbar-toggler navbar-toggler-right"
+            <div id="navmenu-btn"
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <!-- <button class="navbar-toggler navbar-toggler-right"
               type="button"
               data-toggle="collapse"
               data-target="#navbarResponsive"
               aria-controls="navbarResponsive"
               aria-expanded="false"
               aria-label="Toggle navigation"><i class="fas fa-bars ml-2"></i>
-            </button>
+            </button> -->
 
             <?php
             wp_nav_menu(array( 'theme_location' => 'primary',
