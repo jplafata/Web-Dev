@@ -45,7 +45,7 @@ nav {
     font-size: 1.25em;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
-#mainNav.navbar-shrink .navbar-brand img {
+  #mainNav.navbar-shrink .navbar-brand img {
     height: 5.5rem;
   }
   #mainNav .navbar-nav .nav-item {
@@ -64,10 +64,11 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-/*  background-size: cover; */
 }
 
-@media (min-width: 768px) { header.masthead { padding-top: 17rem;
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 17rem;
     padding-bottom: 12.5rem;
   }
 }
@@ -93,7 +94,7 @@ header.masthead {
   position: absolute;
   height: 3px;
   width: 55%;
-  background: #d3531a;
+  background: #9a6841;
   border-radius: 9px;
   opacity: 1;
   left: 0;
