@@ -23,7 +23,7 @@ nav {
   list-style: none;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) { */
   #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -35,7 +35,8 @@ nav {
     font-size: 1.5em; transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 2rem; transition: height 0.3s ease-in-out;
+    height: 7rem;
+    transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
     padding-top: 1rem; padding-bottom: 1rem; background-color: #212529 !important;
@@ -45,7 +46,7 @@ nav {
   }
   #mainNav.navbar-shrink .navbar-brand svg,
 #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+    height: 5.5rem;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
@@ -53,7 +54,7 @@ nav {
   #mainNav .navbar-nav .nav-item:last-child {
     margin-right: 0;
   }
-}
+/* } */
 
 header.masthead {
   padding-top: 10.5rem;

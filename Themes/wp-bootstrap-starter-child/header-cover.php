@@ -42,7 +42,7 @@
               data-target="#navbarResponsive"
               aria-controls="navbarResponsive"
               aria-expanded="false"
-              aria-label="Toggle navigation">  Menu <i class="fas fa-bars ml-1"></i>
+              aria-label="Toggle navigation"><i class="fas fa-bars ml-2"></i>
             </button>
 
             <?php
