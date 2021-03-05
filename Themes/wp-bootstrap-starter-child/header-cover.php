@@ -60,12 +60,17 @@
             </button> -->
 
             <?php
-            wp_nav_menu(array( 'theme_location' => 'primary',
-            'container' => 'div', 'container_id' => 'navbarResponsive',
-            'container_class' => 'collapse navbar-collapse', 'menu_id'
-            => false, 'menu_class' => 'navbar-nav', 'depth' => 3,
-            'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-            'walker' => new wp_bootstrap_navwalker() )); ?>
+            wp_nav_menu(array(
+              'theme_location' => 'primary',
+              'container' => 'div',
+              'container_id' => 'navbarResponsive',
+              'container_class' => 'collapse navbar-collapse',
+              'menu_id' => false,
+              'menu_class' => 'navbar-nav text-uppercase ml-auto',
+              'depth' => 3,
+              'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+              'walker' => new wp_bootstrap_navwalker()
+            )); ?>
 
           </div>
         </nav>
