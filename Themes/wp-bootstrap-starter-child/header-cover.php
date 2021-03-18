@@ -80,7 +80,7 @@
         <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
           <header class="masthead <?php echo wp_bootstrap_starter_bg_class(); ?>"
             style="background-image: url('<?php header_image();?>');
-            background-size:cover !important;" role="banner">
+            background-size:cover !important; min-height:100vh;" role="banner">
         <?php else: ?>
           <header class="masthead <?php echo wp_bootstrap_starter_bg_class(); ?>" role="banner">
         <?php endif; ?>
