@@ -39,7 +39,9 @@ nav {
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    padding-top: 1rem; padding-bottom: 1rem; background-color: #212529 !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #212529 !important;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -147,4 +149,14 @@ header.masthead {
   top: 9px;
   width: 0%;
   left: 50%;
+}
+
+.collapsing,.show{
+  background-color: #212529;
+}
+
+/*end nav btn*/
+/*sub navigation menus*/
+.below-main-nav{
+  top: 126px!important;
 }

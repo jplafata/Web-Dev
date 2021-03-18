@@ -2,8 +2,11 @@
 /**
 * Template Name: Full Width Cover
  */
-
-get_header('cover'); ?>
+if(is_front_page()){
+	get_header('cover');
+}else{
+	get_header();
+} ?>
 
 	<section id="primary" class="content-area col-sm-12">
 		<main id="main" class="site-main" role="main">
