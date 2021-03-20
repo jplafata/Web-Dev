@@ -14,6 +14,16 @@ body{
 position:relative;
 }
 
+@font-face {
+    font-family: casloncp;
+    src: url(http://jlbeautyinc.com/wp-content/themes/wp-bootstrap-starter-child/fonts/casloncp-webfont.woff);
+    font-weight: normal;
+}
+
+.site-title {
+font-family: "casloncp", Arial, sans-serif;
+}
+
 
 nav {
   display: flex;
@@ -114,19 +124,19 @@ header.masthead {
 /* Icon 3 */
 
 #navmenu-btn span:nth-child(1) {
-  top: 0px;
+  top: 9px;
 }
 
 #navmenu-btn span:nth-child(2),#navmenu-btn span:nth-child(3) {
-  top: 9px;
-}
-
-#navmenu-btn span:nth-child(4) {
   top: 18px;
 }
 
+#navmenu-btn span:nth-child(4) {
+  top: 27px;
+}
+
 #navmenu-btn.open span:nth-child(1) {
-  top: 9px;
+  top: 18px;
   width: 0%;
   left: 50%;
 }
@@ -146,7 +156,7 @@ header.masthead {
 }
 
 #navmenu-btn.open span:nth-child(4) {
-  top: 9px;
+  top: 18px;
   width: 0%;
   left: 50%;
 }

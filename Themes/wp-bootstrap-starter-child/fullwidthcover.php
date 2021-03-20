@@ -3,7 +3,8 @@
 * Template Name: Full Width Cover
  */
 if(is_front_page()){
-	get_header('cover');
+	//get_header('cover');
+	get_header('logotrans');
 }else{
 	get_header();
 } ?>
