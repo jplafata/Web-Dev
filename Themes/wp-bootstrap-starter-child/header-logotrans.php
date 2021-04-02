@@ -44,7 +44,7 @@
 
 
 
-            <div id="navmenu-btn"
+            <!-- <div id="navmenu-btn"
               class="navbar-toggler navbar-toggler-right"
               type="button"
               data-toggle="collapse"
@@ -56,6 +56,17 @@
               <span></span>
               <span></span>
               <span></span>
+            </div> -->
+
+            <div id="navmenu-btn"
+              class="navbar-toggler navbar-toggler-right border rounded"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <button type="button" class="btn btn-outline-secondary">Menu</button>
             </div>
 
             <?php
@@ -92,10 +103,14 @@
                                   <img src="<?php echo esc_url(get_theme_mod('wp_bootstrap_starter_logo' )); ?>" alt="<?php
                                   echo esc_attr( get_bloginfo( 'name' ) ); ?>"> </a>
                       <?php endif; ?>
-                      <img src="http://jlbeautyinc.com/wp-content/uploads/2021/03/Artboard-12.png" alt="collage">
-                      <br>
+                        <br>
                        <a href="#content" style="padding-top:10vh;" class="page-scroller"><i class="fa fa-fw
                       fa-angle-down"></i></a>
+                      <br>
+                      <img src="http://jlbeautyinc.com/wp-content/uploads/2021/03/Artboard-12.png" alt="collage">
+                      <!-- <br>
+                       <a href="#content" style="padding-top:10vh;" class="page-scroller"><i class="fa fa-fw
+                      fa-angle-down"></i></a> -->
                 </div>
               <?php endif; ?>
             </div>

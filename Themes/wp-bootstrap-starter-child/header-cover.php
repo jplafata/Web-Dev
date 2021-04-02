@@ -26,17 +26,23 @@
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
           <div class="container">
-            <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
-                    <a class="navbar-brand js-scroll-trigger" href="<?php echo esc_url( home_url( '/' )); ?>">
-                        <img src="<?php echo esc_url(get_theme_mod('wp_bootstrap_starter_logo' )); ?>" alt="<?php
-                        echo esc_attr( get_bloginfo( 'name' ) ); ?>"> </a>
-            <?php else : ?>
-                    <a class="navbar-brand js-scroll-trigger site-title" href="<?php echo
-                    esc_url( home_url( '/' )); ?>"><?php
-                    esc_url(bloginfo('name')); ?></a>
-            <?php endif; ?>
 
-            <div id="navmenu-btn"
+                        <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
+
+                          <a class="navbar-brand js-scroll-trigger site-title" href="<?php echo
+                          esc_url( home_url( '/' )); ?>"><?php
+                          esc_url(bloginfo('name')); ?></a>
+                          <?php /*
+                                <a class="navbar-brand js-scroll-trigger" href="<?php echo esc_url( home_url( '/' )); ?>">
+                                    <img src="<?php echo esc_url(get_theme_mod('wp_bootstrap_starter_logo' )); ?>" alt="<?php
+                                    echo esc_attr( get_bloginfo( 'name' ) ); ?>"> </a>  */?>
+                        <?php else : ?>
+                                <a class="navbar-brand js-scroll-trigger site-title" href="<?php echo
+                                esc_url( home_url( '/' )); ?>"><?php
+                                esc_url(bloginfo('name')); ?></a>
+                        <?php endif; ?>
+
+            <!-- <div id="navmenu-btn"
               class="navbar-toggler navbar-toggler-right"
               type="button"
               data-toggle="collapse"
@@ -48,6 +54,16 @@
               <span></span>
               <span></span>
               <span></span>
+            </div> -->
+            <div id="navmenu-btn"
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+                <button type="button" class="btn btn-outline-secondary">Menu</button>
             </div>
 
             <!-- <button class="navbar-toggler navbar-toggler-right"
@@ -88,28 +104,19 @@
             <div class="container">
               <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
                 <div id="page-sub-header">
-                      <h1> <?php if(get_theme_mod('header_banner_title_setting' )){
-                              echo esc_attr( get_theme_mod(
-                              'header_banner_title_setting' ) );
-                          }else{
-                              echo 'WordPress + Bootstrap';
-                          }
-                          ?>
-                        </h1>
-                        <p> <?php if(get_theme_mod(
-                          'header_banner_tagline_setting' )){
-                              echo esc_attr( get_theme_mod(
-                              'header_banner_tagline_setting' ) );
-                                  }else{
-                                    echo esc_html__('To customize the contents
-                                    of this header banner and other elements of
-                                    your site, go to Dashboard > Appearance >
-                                    Customize','wp-bootstrap-starter');
-                              }
-                          ?>
-                        </p>
-                        <a href="#content" class="page-scroller"><i class="fa fa-fw
+                      <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
+                              <a class="logo" href="<?php echo esc_url( home_url( '/' )); ?>">
+                                  <img src="<?php echo esc_url(get_theme_mod('wp_bootstrap_starter_logo' )); ?>" alt="<?php
+                                  echo esc_attr( get_bloginfo( 'name' ) ); ?>"> </a>
+                      <?php endif; ?>
+                        <br>
+                       <a href="#content" style="padding-top:10vh;" class="page-scroller"><i class="fa fa-fw
                       fa-angle-down"></i></a>
+                      <br>
+                      <img src="http://jlbeautyinc.com/wp-content/uploads/2021/03/Artboard-12.png" alt="collage">
+                      <!-- <br>
+                       <a href="#content" style="padding-top:10vh;" class="page-scroller"><i class="fa fa-fw
+                      fa-angle-down"></i></a> -->
                 </div>
               <?php endif; ?>
             </div>
@@ -117,5 +124,4 @@
           <?php //end masthead ?>
 
 	<div id="content" class="site-content">
-		<div class="container"> <div class="row">
     <?php endif; ?>

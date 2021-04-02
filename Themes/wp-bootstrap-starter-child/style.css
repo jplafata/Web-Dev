@@ -15,13 +15,14 @@ position:relative;
 }
 
 @font-face {
-    font-family: casloncp;
-    src: url(http://jlbeautyinc.com/wp-content/themes/wp-bootstrap-starter-child/fonts/casloncp-webfont.woff);
+    font-family: rocksalt;
+    src: url('http://jlbeautyinc.com/wp-content/themes/wp-bootstrap-starter-child/fonts/rocksalt-regular-webfont.woff');
     font-weight: normal;
 }
 
 .site-title {
-font-family: "casloncp", Arial, sans-serif;
+font-family: "rocksalt", Arial, sans-serif;
+color: #996a41!important;
 }
 
 
@@ -51,7 +52,7 @@ nav {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529 !important;
+    background-color: #0f1c17 !important;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -87,7 +88,7 @@ header.masthead {
 
 /*button css*/
 #navmenu-btn {
-  width: 60px;
+  width: 80px;
   height: 45px;
   position: relative;
   -webkit-transform: rotate(0deg);
@@ -100,7 +101,7 @@ header.masthead {
   transition: .5s ease-in-out;
   cursor: pointer;
 }
-
+/*
 #navmenu-btn span {
   display: block;
   position: absolute;
@@ -159,7 +160,7 @@ header.masthead {
   top: 18px;
   width: 0%;
   left: 50%;
-}
+} */
 
 .collapsing,.show{
   background-color: #212529;
