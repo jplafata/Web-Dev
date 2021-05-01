@@ -36,7 +36,13 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
 
-function loadChildScipts(){ wp_enqueue_script('child-js', 
+function loadChildScipts(){ wp_enqueue_script('child-js',
   get_stylesheet_directory_uri().'/js/child-script.js', array('jquery', 'wp-bootstrap-starter-themejs'), null, true);
+
+  if(get_theme_mod( 'preset_style_setting' ) === 'zeyada-carrios_gothic') {
+        wp_enqueue_style( 'wp-bootstrap-starter-zeyada-carrios-font', 'https://fonts.googleapis.com/css?family=Zeyada:400,400i,700,700i|Carrois+Gothic:300,400,500,600,700' );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'loadChildScipts', 99 );
+
+

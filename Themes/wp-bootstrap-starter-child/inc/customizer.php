@@ -82,10 +82,10 @@ function wp_bootstrap_starter_customize_register( $wp_customize ) {
             'montserrat-merriweather' => 'Montserrat / Merriweather',
             'montserrat-opensans' => 'Montserrat / Opensans',
             'oswald-muli' => 'Oswald / Muli',
-            'zeyada-carrios_gothic' => 'Zeyada / Carrios Gothic',
             'poppins-lora' => 'Poppins / Lora',
             'poppins-poppins' => 'Poppins / Poppins',
             'roboto-roboto' => 'Roboto / Roboto',
+	    'zeyada-carrios_gothic' => 'Zeyada / Carrios Gothic',
             'robotoslab-roboto' => 'Roboto Slab / Roboto',
         )
     ) ) );

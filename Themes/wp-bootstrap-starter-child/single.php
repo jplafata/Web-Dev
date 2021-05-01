@@ -7,7 +7,9 @@
  * @package WP_Bootstrap_Starter
  */
 
-get_header(); ?>
+get_header('cover'); ?>
+<div class="container mt-5"> 
+        <div class="row">
 
 	<section id="primary" class="content-area col-sm-12 col-lg-8">
 		<main id="main" class="site-main" role="main">
@@ -30,6 +32,8 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php
-get_sidebar();
-get_footer();
+<?php get_sidebar(); ?>
+</div>
+</div>
+
+<?php get_footer(); ?>

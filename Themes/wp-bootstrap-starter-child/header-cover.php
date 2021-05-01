@@ -55,7 +55,7 @@
               <span></span>
               <span></span>
             </div> -->
-            <div id="navmenu-btn"
+            <button id="navmenu-btn"
               class="navbar-toggler navbar-toggler-right"
               type="button"
               data-toggle="collapse"
@@ -63,8 +63,8 @@
               aria-controls="navbarResponsive"
               aria-expanded="false"
               aria-label="Toggle navigation">
-                <button type="button" class="btn btn-outline-secondary">Menu</button>
-            </div>
+                Menu
+            </button>
 
             <!-- <button class="navbar-toggler navbar-toggler-right"
               type="button"
@@ -98,7 +98,7 @@
             style="background-image: url('<?php header_image();?>');
             background-size:cover !important; min-height:100vh;" role="banner">
         <?php else: ?>
-          <header class="masthead <?php echo wp_bootstrap_starter_bg_class(); ?>" role="banner">
+          <header role="banner">
         <?php endif; ?>
 
             <div class="container">
@@ -124,4 +124,5 @@
           <?php //end masthead ?>
 
 	<div id="content" class="site-content">
+
     <?php endif; ?>
